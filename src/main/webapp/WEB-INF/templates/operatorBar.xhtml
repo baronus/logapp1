@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:body>
+        <ui:composition>
+            <f:ajax event="click" listener="#{formulaBean.operate}" render="formula formula2" onevent="setFocus() " >
+                <h:inputHidden value="#{formulaBean.selectionStart1}" id="selectionStart1" />
+                <h:inputHidden value="#{formulaBean.selectionStart2}" id="selectionStart2" />
+                <h:inputHidden value="#{formulaBean.focusid}" id="focusid"/>
+                <h:commandButton  id="predicate" value="Add Predicate"/>
+                <h:commandButton  id="function" value="Add Function"/>
+                <h:commandButton  id="variable" value="Add Variable"/>
+                <h:panelGroup id="g1" layout="block">
+                    <h:commandButton id="negate" value="&#x00ac;" class="junctions" />
+                    <h:commandButton id="conjunction" value="&#x2227;" class="junctions2" />
+                    <h:commandButton id="disjunction" value="&#x2228;" class="junctions2" />
+                    <h:commandButton id="implication" value="&#x2192;" class="junctions"/>
+                    <h:commandButton id="bikonditional" value="&#x2194;" class="junctions"/>
+                    <h:commandButton id="identic" value="&#x2261;" class="junctions"/>
+                    <h:commandButton id="forAll" value="&#x2200;" class="junctions2"/>
+                    <h:commandButton id="exists" value="&#x2203;" class="junctions2"/>
+                    <h:commandButton id="openParenthesis" value="&#x0028;" class="junctions"/>
+                    <h:commandButton id="closeParenthesis" value="&#x0029;" class="junctions"/>
+                    <h:commandButton id="comma" value="&#x002C;" class="junctions"/>
+                    <f:attribute name="att1" value="att1v"/>
+                </h:panelGroup>
+            </f:ajax>
+        </ui:composition>
+    </h:body>
+</html>
+

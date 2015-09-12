@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:body>
+        <ui:composition>
+            <h:commandButton id="absorbtion" value="absorbtion" action="#{transformationBean.transform('absorbtion')}"/> 
+            <br/>
+            <h:commandButton id="reductioAdAbsordum" value="reductioAdAbsordum" action="#{transformationBean.transform('reductioAdAbsurdum')}"/> 
+            <br/>
+            <h:commandButton id="clearAssoziations" value="clearAssoziations" action="#{transformationBean.transform('clearAssoziations')}"/> 
+            <br/>
+            <h:commandButton id="clearBikonditional" value="clearBikonditional" action="#{transformationBean.transform('clearBiconditional')}"/> 
+            <br/>
+            <h:commandButton id="clearKonditional" value="clearKonditional" action="#{transformationBean.transform('clearConditional')}"/> 
+            <br/>
+            <h:commandButton id="clearDoubleNegation" value="clearDoubleNegation" action="#{transformationBean.transform('clearDoubleNegation')}"/> 
+            <br/>
+            <h:commandButton id="minimizeNegationSkopus" value="minimizeNegationSkopus" action="#{transformationBean.transform('minimizeNegationSkopus')}"/> 
+            <br/>
+            <h:commandButton id="Distribution" value="distribution" action="#{transformationBean.transform('distribution')}"/> 
+            <br/>
+            <h:commandButton id="reformDistribution" value="reformDistribution" action="#{transformationBean.transform('reformDistribution')}"/> 
+            <br/>
+            <h:commandButton id="innerDistribution" value="innerDistribution" action="#{transformationBean.transform('innerDistribution')}"/> 
+            <br/>
+            <h:commandButton id="idempotenz" value="idempotenz" action="#{transformationBean.transform('idempotenz')}"/> 
+            <br/>
+            <h:commandButton id="toOrdered" value="order" action="#{transformationBean.transform('toOrdered')}"/> 
+            <br/>
+            <h:commandButton id="cleanVariables" value="cleanVariables" action="#{transformationBean.transform('cleanVariables')}"/> 
+        </ui:composition>
+    </h:body>
+</html>
+
